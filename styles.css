@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+#calculator-container {
+    width: 400px;
+    background-color: lightblue;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#display {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid rgb(37, 37, 37);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    align-items: center;
+    height: 100px;
+    font-size: 50px;
+    padding-right: 5px;
+}
+
+.number-btns, .operator-btns {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#zero-btn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 100px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.operator-btns {
+    background-color: rgb(100, 100, 255);
+}
+
+#clear, #plus-minus, #modulus {
+    background-color: white;
+}
+
+.number-btns:hover, .operator-btns:hover, .zero-btn:hover, 
+#clear:hover, #plus-minus:hover, #modulus:hover, #divide:hover{
+    background-color: lightgray;
+}
+
+.number-btns:active, .operator-btns:active, .zero-btn:active,
+#clear:active, #plus-minus:active, #modulus:active, #divide:active {
+    background-color: darkgray;
+}
